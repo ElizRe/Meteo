@@ -5,7 +5,7 @@ var nom = $('#city');
 $('#selec').click(function () {
 
     $.ajax({
-        url: 'http://api.openweathermap.org/data/2.5/weather?q=' + nom.val() + ',fr&appid=2304ca0a4c5b96eca86deb93757adbfa',
+        url: 'https://api.openweathermap.org/data/2.5/weather?q=' + nom.val() + ',fr&appid=2304ca0a4c5b96eca86deb93757adbfa',
         type: 'GET',
         dataType: 'json',
     })
