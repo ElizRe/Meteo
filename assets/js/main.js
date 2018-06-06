@@ -5,7 +5,7 @@ var nom = $('#city');
 $('#selec').click(function () {
 
     $.ajax({
-        url: 'https://api.openweathermap.org/data/2.5/weather?q=' + nom.val() + ',fr&appid=2304ca0a4c5b96eca86deb93757adbfa',
+        url: 'https://api.openweathermap.org/data/2.5/weather?q=' + nom.val() + ',fr&appid=cfa29b5d4a44280d3dea3471a4ca4ac4',
         type: 'GET',
         dataType: 'json',
     })
@@ -28,7 +28,7 @@ $('#selec').click(function () {
         .fail(function (err) {
             console.log(err);
         })
-        .always(function () { // S'execute dans tous les cas!
+        .always(function () { 
             console.log("complete");
             console.log(nom.val());
         });
